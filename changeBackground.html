@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>change the backgroung</title>
+</head>
+<body id="body" onload="changeBack()">
+	<h1>the color of:</h1>
+	<form name="myForm">
+		<!--this function will do the thing when select change-->								
+		<select id="selectColors" onchange="changeBack()">
+			<option value="black">darknest</option>
+			<option value="lightblue"> the sky</option>
+			<option value="red"> your blood</option>
+			<option value="green">when the nature blooming</option>
+			<option value="white">innonce</option>
+			<option value="orange">the orange</option>
+			<option value="gold">the precious gold</option>
+			<option value="blue">sadness</option>
+			<option value="oliver">oil oliver</option>
+		</select>
+	</form>
+
+	<script type="text/javascript">
+		// the firt thing is 
+		// to select the elements
+		var body = document.getElementById('body');
+		var select = document.getElementById('selectColors');
+		// the function run or execute
+			function changeBack() {
+			body.style.background = select.value;
+			body.style.color = "white";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dupercalulator</title>
+</head>
+<link rel="stylesheet" href="style/calculator.css">
+
+<script src="js/calculator.js"></script>
+<body>
+    
+    <main id="container">
+        
+        <header>
+            <h1> calculator</h1>
+           <div>
+                <!--readonly - NO KEYBOARD INPUT-->
+                <input type="text"  id="show"> 
+           </div>
+            <nav>
+                <input type="button" value="="  onclick="e('=')" class="button">
+                <input type="button" value="Clear"  onclick="clearInput('')" class="button">
+                <input type="button" class="button" value="." onclick="calc('.')">
+                <input type="button" class="button" value="%" onclick="calc('%')">
+                
+            </nav>
+            <aside>
+                <!--passing the value as an argument-->
+                <input type="button" value="+"  onclick="calc('+')" class="button">
+                <input type="button" value="-"  onclick="calc('-')" class="button">
+                <input type="button" value="/"  onclick="calc('/')" class="button">
+                <input type="button" value="*"  onclick="calc('*')" class="button">
+            </aside>
+        </header>
+        <section>
+           <div>
+            <!--passing the value as an argument-->
+                <input type="button" class="button" value="1" onclick="calc(1)">
+                <input type="button" class="button" value="2" onclick="calc(2)">
+                <input type="button" class="button" value="3" onclick="calc(3)">
+                <input type="button" value="0"  onclick="calc('0')" class="button">
+           </div>
+           <div>
+            <!--passing the value as an argument-->
+                <input type="button" class="button" value="4" onclick="calc(4)">
+                <input type="button" class="button" value="5" onclick="calc(5)">
+                <input type="button" class="button" value="6" onclick="calc(6)">
+           </div>
+           <div>
+            <!--passing the value as an argument-->
+                <input type="button" class="button" value="7" onclick="calc(7)">
+                <input type="button" class="button" value="8" onclick="calc(8)">
+                <input type="button" class="button" value="9" onclick="calc(9)">
+           </div>
+        </section>
+    </main>
+
+    
+    
+</body>
+</html>

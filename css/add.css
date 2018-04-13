@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+#result, h1, #multi {
+  background: cornflowerblue;
+  color: white;
+}
+/*centering the result to body of the content**/
+#result, #multi {
+  width: 25%;
+  margin: 0 auto;
+
+}
