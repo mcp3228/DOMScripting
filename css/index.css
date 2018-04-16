@@ -1,5 +1,6 @@
 body {
     background: white;
+    background: #fff;
     color: gray;
 }
 #wrapper {
@@ -10,7 +11,14 @@ body {
     width: 90%;
     margin: 0 auto;
 }
-
+.main-container nav {
+    margin-bottom: 20px;
+    background: #f2ebf7;
+    width: 650px;
+}
+.main-container nav a {
+    padding: 10px;
+}
 .container {
     display: flex;
 }
