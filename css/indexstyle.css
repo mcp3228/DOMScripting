@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+  header {
+      background: rgba(226, 225, 233, 0.842);
+      padding: 10px;
+      font-size: 20px;
+      margin: 5px;
+  }
+  nav {
+    padding: 10px;
+  }
+  nav a, button {
+    text-decoration: none;
+    background: grey;
+    color: whitesmoke;
+    border-radius: 6px 6px;
+    padding: 5px;
+  }
+  main {
+    padding: 15px;
+    color: black;
+  }
+  #display {
+    background: grey;
+    padding: 10px;
+    font-size: 100px;
+    border-radius: 5px 5px;
+    color: whitesmoke;
+  }
+  #grabbing > * {
+    padding: 10px;
+    color: rebeccapurple;
+    font-weight: 900;
+  }
+  .button-container button {
+    margin: 7px;
+    padding: 7px;
+    background: grey;
+  }
+  
+  
