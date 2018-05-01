@@ -1,10 +1,14 @@
+body {
+    background: #03030b;
+}
 main {
     width: 30%;
     margin: 0 auto;
     background: rgb(39, 45, 63);
-    color: rgb(94, 153, 163);
+    color: rgb(154, 165, 224);
     box-sizing: border-box;
     text-align: left;
+    border-radius: 16px 8px;
 }
 
 
@@ -13,11 +17,19 @@ input {
 }
 input[type="button"] {
     color: maroon;
-    background: lightseagreen;
+    background: rgb(10, 9, 34);
     min-width: 48px;
     min-height: 48px;
     width: 49px;
     font-size: 16px;
     font-weight: bolder;
     border-radius: 16px 8px;
+}
+
+pre {
+    background: rgb(35, 37, 42);
+}
+
+textarea {
+    background: #03030b;
 }

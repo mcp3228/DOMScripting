@@ -3,24 +3,39 @@ body {
     background: #fff;
     color: gray;
 }
+
 #wrapper {
+    width: 80%;
     display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.main-container {
-    width: 90%;
-    margin: 0 auto;
+main {
+    width: 70%;
+    margin-left: 35px;
+    flex: 3;
 }
+ 
+
 .main-container nav {
     margin-bottom: 20px;
     background: #f2ebf7;
     width: 650px;
+    
+    background: #f2ebf7
 }
+
 .main-container nav a {
     padding: 10px;
 }
 .container {
     display: flex;
+}
+nav a , nav button {
+    color:  #363636;
+    text-decoration: none;
+    font-size: 1.3em;
 }
 .box {
     background: rgb(58, 23, 58);
@@ -30,11 +45,11 @@ body {
     padding: 15px;
     box-sizing: border-box;
     width: 160px;
+    
 }
 
 .second-container .box {
     background: rgb(82, 35, 82);
-    background: #492361;
     background: #44394a;
     
 }
@@ -47,14 +62,10 @@ body {
 aside {
     background: #363636;
     color: white; 
-    height: 900px;
+    height: auto;
 }
 aside a {
     color: inherit;
-}
-aside ul li {
-    list-style: none;
-    margin-bottom: 25px;
 }
 #menu-icon {
     margin-bottom: 15px;
@@ -66,12 +77,110 @@ aside ul li {
     display: block;
     margin: 5px;
     width: 35px;
+     
 }
 #menu-close {
-    padding: 3px;
+    padding: 5px;
 }
-nav a {
-    color:  #363636;
-    text-decoration: none;
-    font-size: 1.3em;
+#menu-close li {
+   background: #492361;
+   background: #44394a;
+   background: radial-gradient(rgb(82, 35, 82),#492361, #44394a);
+   border-radius: 20px;
+   padding: 5px;
+   text-align: center;
+}
+.bio {
+    padding: 5px;
+    background: #44394a;
+    color: white;  
+    width: 10%;
+    flex: 2;
+}
+.bio-header {
+    display: flex;
+}
+figure img {
+    max-width: 50%;
+    height: auto;
+}
+.social  div img  {
+    width: 50px;
+    height: 0 auto;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+aside ul li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+article h3 {
+    text-transform: capitalize;
+}
+
+
+
+
+@media (max-width: 480px) {
+    
+    #menu-close {
+        display: none;
+    }  
+    #menu-close {
+        font: .8em sans-serif;
+    }
+    
+    aside {
+        background: white;
+        border-right: 1px purple outset;
+        height: auto;
+        order: -1;
+    }
+    .bio {
+        width: 60%;
+        margin: 0 auto;
+        order: 2;
+    }
+    .main-container nav {
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        background: #492361;
+        width: 100%;;
+    }
+    nav a {
+        color: white;
+        font: .9em sans-serif;
+        margin: 0;
+    }
+    .container {
+        margin: 0;
+    }
+    .box {
+        width: 100%;
+        color: white;
+        padding: 10px 0;
+        box-sizing: border-box;
+        font-size: 90%;
+        border-radius: 20px;
+        text-align: center;
+        /*margin: 10px auto;*/
+        justify-content: center;
+    }
+
+    #menu-icon {
+        padding-left: 0px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        width: 40px;
+        border-radius: 5px; 
+        margin: auto; 
+        margin-right: 5px;
+    }
+    #menu-icon span {
+        text-align: left; 
+        padding: 0;                       
+    }
+
+    
 }

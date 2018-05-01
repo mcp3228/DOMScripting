@@ -19,9 +19,9 @@
     <main>
 
         <div id="display">
-            <input type="number" value="00" name="hours" id="hours" />
-            <input type="number" value="00" name="min" id="min">:
-            <input type="number" value="00" name="sec" id="seconds">
+            <input type="number" value="00" name="hours" id="hours" min="00" max="60" />
+            <input type="number" value="00" name="min" id="min" min="00" max="60">:
+            <input type="number" id="seconds" type="number" min="00" max="60">
         </div>
         <div class="button-container">
             <button type="reset" id="reset">reset</button>

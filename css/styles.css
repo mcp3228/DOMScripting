@@ -1,31 +1,31 @@
 body {
+    text-align: center;
+    background: steelblue;
     margin: 0 auto;
-   text-align: center;
-   color: rgb(0, 0, 36); 
+    color: white;
 }
 
 main {
-    background: cornsilk;
-    max-width: 800px;
+    background: rgb(221, 220, 255);
+    max-width: 80%;
     margin: 0 auto;
 }
 h3 {
     text-transform: uppercase;
 }
 #tweetbox {
-    background: wheat;
-    width: 40%;
-    height: 200px;
-    border: 1px skyblue groove;
-    border-radius: 5px 5px;
-    color: rgb(0, 0, 36);
-    font-size: 1.3em;
-    padding: 15px;
+    font-size: 1em;
     margin: 0 auto;
-}
+    padding: 5px;
+    text-align: center;
+}  
 
-textarea {
-    display: block;
-    margin: 10px auto;
-    direction: ltr;
+
+
+div {
+    width: 50%;
+    background: rgb(0, 0, 36);
+    border-radius:  40px;
+    padding: 5px;
+    margin: 10px;
 }

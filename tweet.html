@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,39 @@
     <title>the tweet projects</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <main>
-            <h3>this the time to write what's in your mind</h3>
-            <div id="tweetbox">
+        <h3>this the time to write what's in your mind</h3>
+        <section id="tweetbox">
 
-    </div>
-    <h3>enter a text here please</h3>
-    <!--<form action="" name="formtweet">
+        </section>
+        <h3>enter a text here please</h3>
+        <!--<form action="" name="formtweet">
         <input type="text" name="inputTweet" id="myinput">-->
-        <textarea name="texttweet" id="texttweety" cols="30" rows="10"></textarea>
-   <!-- </form>-->
+        <textarea name="texttweet" id="texttweety" cols="50" rows="5"></textarea>
+        <!-- </form>-->
     </main>
 
     <script>
 
         var boxtweet = document.getElementById("tweetbox");
         var tweet = document.getElementById("texttweety");
-        tweet.addEventListener("click", edit)
+        //tweet.addEventListener("change", takeValue);
         tweet.addEventListener("keypress", submit)
-        //textinput.addEventListener("keypress", submit)
-      
-        function edit() {
-            var txtval =tweet.value;
-            tweet.focus()
 
-        }
+        //function takeValue(event) {
+           // console.log(event.target.value);       
+        // }
+    
         function submit(event) {
-            edit()
-            if(event.which === 13) {
-              //boxtweet.innerHTML = textinput.value;
-              boxtweet.innerHTML = tweet.value + "<br/>";
+            if (event.which === 13) {
+               boxtweet.innerHTML += "<div>" + event.target.value + "</div>";  
+               tweet.value = "";                     
             }
         }
 
     </script>
 </body>
+
 </html>

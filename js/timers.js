@@ -4,32 +4,45 @@ var sec = document.getElementById("seconds");
 var seconds = document.getElementById("seconds").value;
 const min = document.getElementById("min").value;
 const hours = document.getElementById("hours").value;
+
 // all the inputs
 var inputs = document.getElementsByTagName("input").value;
-
+var isRunning = false;
 // targetting button 
-const start = document.getElementById("start");
 var reset = document.getElementById("reset");
 var recorder = document.getElementById("recorder");
+const start = document.getElementById("start");
 
 // events listener
 sec.addEventListener("change", editing)
-start.addEventListener("click", startNow);
+
+if(isRunning == false) {
+    start.addEventListener("click", startNow); 
+    function startNow() {
+        if (sec.validity.rangeUnderflow)
+           alert("value too small");
+            setTimer = setInterval(() => {
+                if(sec.value <= 60 && sec.value != 0)
+                    sec.value--
+                if(sec.value == 0)
+                 sec.value = 0;
+                } , 1000)
+         isRunning = true;
+         
+    } 
+} else {
+    isRunning = true;
+    start.removeEventListener("click", startNow);
+}
 
 
 function editing() {
     this.value = event.target.value 
 }
 var timer;
-function startNow() {
-   setTimer = setInterval(() => {
-    if(sec.value <= 60 && sec.value != 0)
-        sec.value--
-    if(sec.value == 0)
-     sec.value = 0;
-    } , 1000)
-    
-}  
+
+
+
 
 // variable to count down
 //
