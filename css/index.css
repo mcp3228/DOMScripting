@@ -3,11 +3,14 @@ body {
     background: #fff;
     color: gray;
 }
-
-#wrapper {
-    width: 80%;
-    display: flex;
+#wrapper, footer {
+    /*^centralize the whole content^*/
     margin: 0 auto;
+    width: 90%;
+}
+#wrapper {
+    /*whole content flexible*/
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -16,19 +19,13 @@ main {
     margin-left: 35px;
     flex: 3;
 }
- 
 
 .main-container nav {
     margin-bottom: 20px;
-    background: #f2ebf7;
     width: 650px;
-    
     background: #f2ebf7
 }
 
-.main-container nav a {
-    padding: 10px;
-}
 .container {
     display: flex;
 }
@@ -36,9 +33,18 @@ nav a , nav button {
     color:  #363636;
     text-decoration: none;
     font-size: 1.3em;
+    padding: 10px;
+}
+nav a:hover {
+    background: rgb(56, 39, 68);
+    color: white;
+    border-radius: 20px;
+}
+#aboutme {
+    border-radius: 20px;
+    padding: 3px;
 }
 .box {
-    background: rgb(58, 23, 58);
     background: rgb(56, 39, 68);
     margin: 2px;
     color: white;
@@ -47,12 +53,8 @@ nav a , nav button {
     width: 160px;
     
 }
+.second-container .box {background: #44394a;}
 
-.second-container .box {
-    background: rgb(82, 35, 82);
-    background: #44394a;
-    
-}
 .box a {
     color: white;
     text-transform: capitalize;
@@ -64,9 +66,8 @@ aside {
     color: white; 
     height: auto;
 }
-aside a {
-    color: inherit;
-}
+aside a {color: inherit;}
+
 #menu-icon {
     margin-bottom: 15px;
     background: #492361;
@@ -77,18 +78,17 @@ aside a {
     display: block;
     margin: 5px;
     width: 35px;
-     
+    
 }
 #menu-close {
     padding: 5px;
 }
 #menu-close li {
-   background: #492361;
-   background: #44394a;
-   background: radial-gradient(rgb(82, 35, 82),#492361, #44394a);
-   border-radius: 20px;
-   padding: 5px;
-   text-align: center;
+    background: #44394a;
+    /* background: linear-gradient(rgb(82, 35, 82),#492361, #44394a);*/
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
 }
 .bio {
     padding: 5px;
@@ -101,14 +101,14 @@ aside a {
     display: flex;
 }
 figure img {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
 }
-.social  div img  {
-    width: 50px;
-    height: 0 auto;
-    border-radius: 50px;
+.social  img  {
+    max-width: 48px;
+    height:48px;
     box-sizing: border-box;
+    padding: 5px;
 }
 aside ul li {
     list-style: none;
@@ -118,9 +118,35 @@ aside ul li {
 article h3 {
     text-transform: capitalize;
 }
-
-
-
+article p {
+    line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: wheat;
+}
+.container img {
+    max-width: 100%;
+}
+footer {
+    background: #363636;
+    display: block;
+    text-transform: uppercase;
+    flex-basis: 100%;
+    box-sizing: border-box;
+}
+footer div {
+    width: 0 auto;
+    /*margin: 0 auto;*/
+    text-align: center;
+    
+}
+footer ul {
+    text-align: center;
+    list-style: none;
+}
+footer a {
+    
+    color:  white;
+}
 
 @media (max-width: 480px) {
     
@@ -167,7 +193,7 @@ article h3 {
         /*margin: 10px auto;*/
         justify-content: center;
     }
-
+    
     #menu-icon {
         padding-left: 0px;
         padding-top: 2px;
@@ -181,6 +207,6 @@ article h3 {
         text-align: left; 
         padding: 0;                       
     }
-
+    
     
 }
