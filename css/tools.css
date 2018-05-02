@@ -7,7 +7,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
   
-  header {
+  header, footer {
       background: rgba(226, 225, 233, 0.842);
       padding: 10px;
       font-size: 20px;
@@ -16,7 +16,7 @@
   nav {
     padding: 10px;
   }
-  nav a, button {
+  nav a, button, footer a {
     text-decoration: none;
     background: grey;
     color: whitesmoke;
@@ -44,5 +44,31 @@
     padding: 7px;
     background: grey;
   }
-  
+  footer {
+    background: rgba(226, 225, 233, 0.842);
+    display: block;
+    text-transform: uppercase;
+    flex-basis: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+footer div {
+    width: 0 auto;
+    /*margin: 0 auto;*/
+    text-align: center;
+    
+}
+footer ul {
+    text-align: center;
+    list-style: none;
+}
+footer li {
+  padding: 10px;
+}
+footer a {
+    background: grey;
+    color:  white;
+}
+
   

@@ -1,18 +1,23 @@
-// targeting element
+// targeting element by ID
 var header = document.getElementById("header");
 var footer = document.getElementById("pages-footer");
-
-// selecting the header
-var subHeading = document.getElementsByClassName("subheadline");
-var slen = subHeading.length;
-var para = document.getElementsByTagName("p");
 var btn = document.getElementById("buttonmode");
 var wrapper =document.getElementById("wrapper");
 var tt = document.getElementById("time")
 
-var timeNow = new Date();
-tt.innerHTML = timeNow
+// other html collection , header
+var subHeading = document.getElementsByClassName("subheadline");
+var slen = subHeading.length;
+var para = document.getElementsByTagName("p");
+
+// called the currnt time /sec
+setInterval(()=>{
+    tt.innerHTML = new Date();
+}, 1000)
+
+// event to element targeted
 btn.addEventListener("click", changeBack)
+
  // lop through all the subheadthin
  // add en event to each
 for (var i = 0; i < slen; i++) {

@@ -1,0 +1,237 @@
+
+/*base style*/
+/*selecting all element*/
+* {
+    margin: 0;
+    padding: 0;
+    /*respect the width limit*/
+    box-sizing: border-box;
+    /*keep original size*/
+    font-size: 100%;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: #eee;
+    border-bottom: 1px groove silver;
+    text-transform: capitalize;
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+}
+body {
+    font-size: 100%;
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(8, 8, 102, 0.73);
+}
+
+
+header {
+    padding: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(gainsboro, seashell, #eef);
+    position: static;
+    top: 0;
+}
+.heading {
+    font-size: 2.5em;
+    color: cornflowerblue;
+    color: navy;
+    flex: 2;
+    margin-top: 10px;
+
+}
+#additems {
+    font-size: 1.2em;
+    color: #3a09c5;
+    border: 1px groove gainsboro;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    margin-top: 14px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ /*END OF THE HEADER SECTION*/
+  /*MAIN SECTION*/
+main {
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+#box-input, input, button {
+    display: inline;
+}
+
+h1, ul, input {
+    margin: 15px;
+    width: 80%;
+}
+
+input {
+    background: rebeccapurple;
+    background: linear-gradient(darkblue, slateblue, navy);
+    color: white;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+.show {
+    display: block;
+}
+ul {
+    padding: 5px;
+    list-style: disc;
+    margin: 15px auto;
+}
+li {
+    color: navy;
+    font-size: 18px;
+    list-style: disc;
+    padding: 5px;
+}
+#ok {
+    margin-left: 15px;
+    color: white;
+    min-width: 55px;
+    background: linear-gradient(darkblue, slateblue, navy);
+    font-size: 19px;
+}
+#show-bottom {
+    margin-bottom: 0;
+    background: linear-gradient(darkblue, slateblue, navy);
+    color: gold;
+    padding: 5px;
+}
+footer {
+ width: 100%;
+ position: fixed;
+ color: #fff;
+ bottom: 0;
+}
+footer ul {
+   width: 100%;
+   margin-top: 0;
+   text-align: center;
+   background: linear-gradient(darkblue, slateblue, navy);
+}  
+footer ul li {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px gainsboro groove;
+    color: white;
+}
+
+
+
+
+@media (max-width: 480px) {
+    /*HEADER SECTION*/
+    header {
+        padding: 10px auto;
+        display: flex;
+        justify-content: space-around;
+        background: linear-gradient(gainsboro, seashell, #eef);
+        position: static;
+        top: 0;
+    }
+    .heading {
+        font-size: 2.5em;
+        color: cornflowerblue;
+        color: navy;
+        flex: 2;
+        margin-top: 10px;
+
+    }
+    #additems {
+        font-size: 1.2em;
+        color: #3a09c5;
+        border: 1px groove gainsboro;
+        border-radius: 5px;
+        flex: 1;
+        text-align: center;
+        margin-top: 14px;
+        padding: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+     /*END OF THE HEADER SECTION*/
+      /*MAIN SECTION*/
+    main {
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    #box-input, input, button {
+        display: inline;
+    }
+    
+    h1, ul, input {
+        margin: 15px;
+        width: 80%;
+    }
+
+    input {
+        background: rebeccapurple;
+        background: linear-gradient(darkblue, slateblue, navy);
+        color: white;
+        padding: 9px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .hide{
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    ul {
+        padding: 5px;
+        list-style: disc;
+        margin: 15px auto;
+    }
+    li {
+        color: navy;
+        font-size: 18px;
+        list-style: disc;
+        padding: 5px;
+    }
+    #ok {
+        margin-left: 15px;
+        color: white;
+        min-width: 55px;
+        background: linear-gradient(darkblue, slateblue, navy);
+        font-size: 19px;
+    }
+    #show-bottom {
+        margin-bottom: 0;
+        background: linear-gradient(darkblue, slateblue, navy);
+        color: gold;
+        padding: 5px;
+    }
+   footer {
+     width: 100%;
+     position: fixed;
+     color: #fff;
+     bottom: 0;
+}
+    footer ul {
+       width: 100%;
+       margin-top: 0;
+       text-align: center;
+       background: linear-gradient(darkblue, slateblue, navy);
+    }  
+    footer ul li {
+        list-style: none;
+        width: 100%;
+        border-bottom: 1px gainsboro groove;
+        color: white;
+    }
+}
