@@ -59,6 +59,7 @@
         }
     }
     window.addEventListener("load", function () {
+        // the value of chkecklist will be this value
         checklist.innerHTML = localStorage.checklist;
     })
 }())
