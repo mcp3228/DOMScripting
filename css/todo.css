@@ -48,19 +48,19 @@ header {
     font-size: 1.2em;
     color: #3a09c5;
     border: 1px groove gainsboro;
-    border-radius: 5px;
+    border-radius: 15px;
     flex: 1;
     text-align: center;
     margin-top: 14px;
-    padding: 10px;
+    padding: 7px;
     font-weight: bold;
     text-transform: uppercase;
 }
  /*END OF THE HEADER SECTION*/
   /*MAIN SECTION*/
-main {
+main, header, footer {
     margin: 0 auto;
-    max-width: 85%;
+    max-width: 35%;
 }
 
 #box-input, input, button {
@@ -110,30 +110,35 @@ li {
     color: gold;
     padding: 5px;
 }
+
 footer {
- width: 100%;
- position: fixed;
- color: #fff;
- bottom: 0;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 33%;
+    width: 100%;
+    margin: 0 auto;
 }
 footer ul {
-   width: 100%;
-   margin-top: 0;
-   text-align: center;
-   background: linear-gradient(darkblue, slateblue, navy);
-}  
-footer ul li {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    background: linear-gradient(darkblue, slateblue, navy);
+ }  
+ footer ul li {
     list-style: none;
     width: 100%;
     border-bottom: 1px gainsboro groove;
     color: white;
 }
 
-
-
-
 @media (max-width: 480px) {
     /*HEADER SECTION*/
+    main, header, footer {
+        margin: 0 auto;
+        max-width: 95%;
+    }
+    
     header {
         padding: 10px auto;
         display: flex;
@@ -166,7 +171,7 @@ footer ul li {
       /*MAIN SECTION*/
     main {
         margin: 0 auto;
-        max-width: 85%;
+        max-width: 100%;
     }
 
     #box-input, input, button {
@@ -221,6 +226,7 @@ footer ul li {
      position: fixed;
      color: #fff;
      bottom: 0;
+     left: 0;
 }
     footer ul {
        width: 100%;

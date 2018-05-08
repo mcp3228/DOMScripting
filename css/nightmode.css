@@ -21,10 +21,10 @@ nav a, nav button  {
     text-decoration: none;
     font-size: 1.3em;
     padding: 5px;
-    border-radius: 0 0 0 10px;
 }
 #aboutme {
-    background: #440606;
+    background: rgb(43, 47, 58);
+    
 }
 
 #wrapper {
@@ -61,12 +61,16 @@ b, strong {
 .hide {
     display: none;
 }
+.show {
+    display: block;
+}
 
 .subheadline, #buttonmode {
     color: white;
     background: rgb(43, 47, 58);
     width: 350px;
     text-transform: uppercase;
+    border-radius: 0 140px 140px 0;
 }
 #buttonmode {
     width: 100px;
@@ -85,6 +89,8 @@ footer div {
     width: 0 auto;
     /*margin: 0 auto;*/
     text-align: center;
+    color: rgb(117, 112, 136);
+    
     
 }
 footer ul {
@@ -96,17 +102,44 @@ footer a {
     color:  white;
 }
 
-@media  (max-width: 400px) {
+@media  (max-width: 480px) {
     body {
         box-sizing: border-box;
     }
     #wrapper {
-        max-width: 80%;
+        width: 95%;
         box-sizing: border-box;
+        padding: 1em 1em 2em;
+        
+    }
+    .header-pages {
+        margin: 0 auto;
+        width: 95%;
+    }
+    nav a {
+        display: block;
+        border: 1px double white;
+        cursor: default;
     }
 
+    article {
+        box-sizing: border-box;
+    }
+    .subheadline {
+        width: 100%;
+        border-radius: 0;
+        font-size: 100%;
+    }
+    h3 {
+        width: 80%;
+        box-sizing: border-box;
+    }
     p {
-        width: 400px;
+        width: 95%;
+        
+    }
+    footer {
+        width: 95%;
     }
 }
 

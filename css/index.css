@@ -4,7 +4,7 @@ body {
     color: gray;
 }
 #wrapper, footer {
-    /*^centralize the whole content^*/
+    /*^ centralize the whole content ^*/
     margin: 0 auto;
     width: 90%;
 }
@@ -13,58 +13,14 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-
-main {
-    width: 70%;
-    margin-left: 35px;
-    flex: 3;
-}
-
-.main-container nav {
-    margin-bottom: 20px;
-    width: 650px;
-    background: #f2ebf7
-}
-
-.container {
-    display: flex;
-}
-nav a , nav button {
-    color:  #363636;
-    text-decoration: none;
-    font-size: 1.3em;
-    padding: 10px;
-}
-nav a:hover {
-    background: rgb(56, 39, 68);
-    color: white;
-    border-radius: 20px;
-}
-#aboutme {
-    border-radius: 20px;
-    padding: 3px;
-}
-.box {
-    background: rgb(56, 39, 68);
-    margin: 2px;
-    color: white;
-    padding: 15px;
-    box-sizing: border-box;
-    width: 160px;
-    
-}
-.second-container .box {background: #44394a;}
-
-.box a {
-    color: white;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-
 aside {
     background: #363636;
     color: white; 
     height: auto;
+}
+aside ul li {
+    list-style: none;
+    margin-bottom: 25px;
 }
 aside a {color: inherit;}
 
@@ -90,6 +46,58 @@ aside a {color: inherit;}
     padding: 5px;
     text-align: center;
 }
+
+main {
+    width: 70%;
+    margin-left: 35px;
+    flex: 3;
+}
+
+.header-pages nav {
+    margin-bottom: 20px;
+    width: 650px;
+    background: #f2ebf7
+}
+
+nav a , nav button {
+    color:  #363636;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 10px;
+}
+nav a:hover {
+    background: rgb(56, 39, 68);
+    color: white;
+    border-radius: 20px;
+}
+#aboutme {
+    border-radius: 20px;
+    padding: 3px;
+    
+}
+.container {
+    display: flex;
+}
+.box {
+    background: rgb(56, 39, 68);
+    margin: 2px;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 160px;
+    
+}
+.second-container .box {
+    background: #44394a;
+}
+
+.box a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
 .bio {
     padding: 5px;
     background: #44394a;
@@ -110,18 +118,16 @@ figure img {
     box-sizing: border-box;
     padding: 5px;
 }
-aside ul li {
-    list-style: none;
-    margin-bottom: 25px;
-}
+
 
 article h3 {
     text-transform: capitalize;
+    color:rgb(176, 144, 212);
 }
 article p {
     line-height: 1.5;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: wheat;
+    color: white;
 }
 .container img {
     max-width: 100%;
@@ -144,69 +150,51 @@ footer ul {
     list-style: none;
 }
 footer a {
-    
     color:  white;
 }
 
 @media (max-width: 480px) {
-    
-    #menu-close {
-        display: none;
-    }  
-    #menu-close {
-        font: .8em sans-serif;
-    }
-    
-    aside {
-        background: white;
-        border-right: 1px purple outset;
-        height: auto;
-        order: -1;
-    }
-    .bio {
-        width: 60%;
-        margin: 0 auto;
-        order: 2;
-    }
-    .main-container nav {
-        margin-bottom: 15px;
-        box-sizing: border-box;
-        background: #492361;
-        width: 100%;;
-    }
-    nav a {
-        color: white;
-        font: .9em sans-serif;
+    body, #wrapper, footer {
+        width: 100%;
         margin: 0;
+        box-sizing: border-box;
+    } 
+    main {
+        margin: 0;
+        width: 80%;
     }
-    .container {
+    .header-pages {
+        margin-left: 0;
+    }
+    
+    .header-pages nav {
+        width: 100%;
+    }
+    nav a , nav button {
+        font-size: 1.1em;
+        padding: 5px;
+    }
+    .container, .second-container {
         margin: 0;
     }
     .box {
-        width: 100%;
-        color: white;
-        padding: 10px 0;
+        padding: 10px;
         box-sizing: border-box;
-        font-size: 90%;
-        border-radius: 20px;
-        text-align: center;
-        /*margin: 10px auto;*/
-        justify-content: center;
+        width: 150px;
+        
     }
-    
-    #menu-icon {
-        padding-left: 0px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        width: 40px;
-        border-radius: 5px; 
-        margin: auto; 
-        margin-right: 5px;
+}
+
+@media (max-width: 360px) {
+    main {
+        margin: 0;
+        width: 60%;
     }
-    #menu-icon span {
-        text-align: left; 
-        padding: 0;                       
+    .box {
+        padding: 7px;
+        box-sizing: border-box;
+        width: 130px;
+        
     }
-    
-    
+
 }
