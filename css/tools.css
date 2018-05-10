@@ -74,14 +74,14 @@ footer a {
 
 
 @media  (max-width: 480px) {
-  body {
-    width: 100%;
+  body, footer {
+    max-width: 100%;
     box-sizing: border-box;    
   }
 
 .header-pages {
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
 }
 
 nav a {

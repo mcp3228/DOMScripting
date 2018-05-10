@@ -1,16 +1,17 @@
 'use strict';
+var document = document;
 //targetting input value
-var sec = document.getElementById("seconds");
+const sec = document.getElementById("seconds");
 var seconds = document.getElementById("seconds").value;
 const min = document.getElementById("min").value;
 const hours = document.getElementById("hours").value;
 
 // all the inputs
 var inputs = document.getElementsByTagName("input").value;
-var isRunning = false;
+let isRunning = false;
 // targetting button 
-var reset = document.getElementById("reset");
-var recorder = document.getElementById("recorder");
+const reset = document.getElementById("reset");
+const recorder = document.getElementById("recorder");
 const start = document.getElementById("start");
 
 // events listener
@@ -21,7 +22,7 @@ if(isRunning == false) {
     function startNow() {
         if (sec.validity.rangeUnderflow)
            alert("value too small");
-            setTimer = setInterval(() => {
+            var setTimer = setInterval(() => {
                 if(sec.value <= 60 && sec.value != 0)
                     sec.value--
                 if(sec.value == 0)

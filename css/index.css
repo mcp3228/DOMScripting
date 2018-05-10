@@ -1,5 +1,5 @@
+/*BASICS STYLES FOR ANY DEVICES*/
 body {
-    background: white;
     background: #fff;
     color: gray;
 }
@@ -34,8 +34,8 @@ aside a {color: inherit;}
     display: block;
     margin: 5px;
     width: 35px;
-    
 }
+
 #menu-close {
     padding: 5px;
 }
@@ -85,8 +85,8 @@ nav a:hover {
     padding: 15px;
     box-sizing: border-box;
     width: 160px;
-    
 }
+
 .second-container .box {
     background: #44394a;
 }
@@ -141,9 +141,7 @@ footer {
 }
 footer div {
     width: 0 auto;
-    /*margin: 0 auto;*/
     text-align: center;
-    
 }
 footer ul {
     text-align: center;
@@ -152,13 +150,23 @@ footer ul {
 footer a {
     color:  white;
 }
+/*STYLES for TABLETS phone*/
+@media (max-width: 768px) {
 
+}
+/*STYLES for mobile phone*/
 @media (max-width: 480px) {
     body, #wrapper, footer {
         width: 100%;
         margin: 0;
         box-sizing: border-box;
     } 
+    #menu-close {
+        padding: 2px;
+    }
+    #menu-close li {
+        padding: 2px;
+    }
     main {
         margin: 0;
         width: 80%;
@@ -178,22 +186,24 @@ footer a {
         margin: 0;
     }
     .box {
-        padding: 10px;
+        padding: 5px;
         box-sizing: border-box;
-        width: 150px;
-        
+        width: 80px;
     }
 }
 
 @media (max-width: 360px) {
+    footer {
+        margin: 0;
+    }
     main {
         margin: 0;
         width: 60%;
     }
     .box {
-        padding: 7px;
+        padding: 3px;
         box-sizing: border-box;
-        width: 130px;
+        width: 60px;
         
     }
 
