@@ -1,7 +1,7 @@
 var images = [
-    "./img/Logojs.png",
+    "./img/Penguins.jpg",
     "./img/logoreact.png",
-    "./img/images.jpg"
+    "./img/web-design-featured.jpg"
 ]
 var count = 0;
 /* var prev = document.getElementById("prev");
@@ -18,8 +18,9 @@ function nextSlide() {
         count = 0;
     }
     // the images will take current value of count
-    slider.src = images[count]
+    slider.src = images[count];
 }
+setInterval(nextSlide, 3000);
 
 /* function prevSlide() {
     var slider = document.getElementById("toSlide");
@@ -29,4 +30,3 @@ function nextSlide() {
     }
     slider.src = images[count]
 } */
-setInterval(nextSlide, 2000)

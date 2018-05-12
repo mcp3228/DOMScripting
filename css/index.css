@@ -1,4 +1,4 @@
-/*BASICS STYLES FOR ANY DEVICES*/
+/*BASE STYLES FOR ANY DEVICES*/
 body {
     background: #fff;
     color: gray;
@@ -65,6 +65,7 @@ nav a , nav button {
     font-size: 1.3em;
     padding: 10px;
 }
+
 nav a:hover {
     background: rgb(56, 39, 68);
     color: white;
@@ -72,7 +73,8 @@ nav a:hover {
 }
 #aboutme {
     border-radius: 20px;
-    padding: 3px;
+    background: #f2ebf7;
+    padding: 2px;
     
 }
 .container {
@@ -150,11 +152,11 @@ footer ul {
 footer a {
     color:  white;
 }
-/*STYLES for TABLETS phone*/
+/***********STYLES for TABLETS phone************/
 @media (max-width: 768px) {
 
 }
-/*STYLES for mobile phone*/
+/************STYLES for mobile phone************/
 @media (max-width: 480px) {
     body, #wrapper, footer {
         width: 100%;
@@ -193,8 +195,13 @@ footer a {
 }
 
 @media (max-width: 360px) {
-    footer {
-        margin: 0;
+    
+    #menu-close {
+        padding: 1px;
+        font-size: 100%;
+    }
+    #menu-close li {
+        padding: 1px;
     }
     main {
         margin: 0;
@@ -205,6 +212,9 @@ footer a {
         box-sizing: border-box;
         width: 60px;
         
+    }
+    footer {
+        margin: 0;
     }
 
 }

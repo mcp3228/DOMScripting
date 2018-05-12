@@ -17,9 +17,6 @@ function showOff() {
 }
 
 const aboutme = document.getElementById("aboutme");
-aboutme.style.background = "#44394a";
-aboutme.style.color = "white";
-
 aboutme.addEventListener("click", showAbout)
 function showAbout() {
     if(bio.style.display == "") {
