@@ -6,15 +6,15 @@ var inputs = checklist.querySelectorAll("input");
 for (var i = 0; i < items.length; i++) {
     // add item an event to each item selected
     items[i].addEventListener("click", doItem);
-    inputs[i].addEventListener("blur", upDatedItem)
-    inputs[i].addEventListener("keypress", itemPress)
+    inputs[i].addEventListener("blur", upDatedItem);
+    inputs[i].addEventListener("keypress", itemPress);
 }
 // this event is to apply to show
 function doItem() {
-   this.className = "edit";
-   var input = this.querySelector("input");
-   input.focus();
-   input.setSelectionRange(0, input.value.length);
+    this.className = "edit";
+    var input = this.querySelector("input");
+    input.focus();
+    input.setSelectionRange(0, input.value.length);
 }
 function upDatedItem() {
     this.previousElementSibling.innerHTML = this.value;
@@ -28,13 +28,13 @@ function itemPress(event) {
 }
 
 var mli = document.getElementById("lihere");
-mli.addEventListener("click", makeInput)
+mli.addEventListener("click", makeInput);
 
 function makeInput() {
     var minput = document.createElement("input");
-    var myatt = document.createAttrib
-     minput.appendChild(myatt);
-    var ul = document.getElementById('clickhere');
+    var myatt = document.createAttrib;
+    minput.appendChild(myatt);
+    var ul = document.getElementById("clickhere");
     ul.appendChild(minput);
 
 }
