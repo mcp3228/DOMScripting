@@ -1,12 +1,11 @@
 const bio = document.getElementById("bio");
-function init() {
-    bio.style.display == "none"
-}
-var menuIcon = document.getElementById("menu-icon");
-var menuClose = document.getElementById("menu-close")
-const headerPages = document.getElementsByClassName("header-pages")[0];
+const  menuIcon = document.getElementById("menu-icon");
+const  menuClose = document.getElementById("menu-close");
+const aboutme = document.getElementById("aboutme");
 
 menuIcon.addEventListener("click", showOff);
+aboutme.addEventListener("click", showAbout);
+
 function showOff() {
     if(menuClose.style.display == "none") {
         menuClose.style.display = "block";
@@ -16,8 +15,6 @@ function showOff() {
     }
 }
 
-const aboutme = document.getElementById("aboutme");
-aboutme.addEventListener("click", showAbout)
 function showAbout() {
     if(bio.style.display == "") {
         bio.style.display = "none";
@@ -26,4 +23,4 @@ function showAbout() {
     }
 }
 
-window.onload = showAbout()
+window.onload = showAbout();
