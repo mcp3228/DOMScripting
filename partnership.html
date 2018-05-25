@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="DIEUSEUL DUPEROY">
+    <title>Let's Begin A Partnership</title>
+    <style>
+        body {
+            background: #f2ebf7;
+            background: #44394a;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .header-pages nav {
+            margin-bottom: 20px;
+            width: 650px;
+            background: #f2ebf7;
+        }
+
+        nav a {
+            color: #363636;
+            text-decoration: none;
+            font-size: 1.3em;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background: rgb(56, 39, 68);
+            color: white;
+            border-radius: 20px;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        p {
+            background: #f2ebf7;
+            color: rgb(56, 39, 68);
+            padding: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        label {
+            background: rgb(56, 39, 68);
+            color: aliceblue;
+            padding: 5px;
+        }
+
+        p,
+        textarea {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-pages">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="https://github.com/duperweb" title="take a look at my repositories">Github</a>
+            <a href="https://WWW.LINKEDIN.COM/IN/DIEUSEUL-DUPEROY-A6062897" title="here are my skills">Linkedin</a>
+            <a href="http://www.youtube.com/UCNaJQ_4mPAq4xGNEPylsa_A" title="some videos I made"> Chanel</a>
+            <a href="partnership.html" title="some videos I made">Business</a>
+            <a href="mailto:duperweb@gmail.com">Contact</a>
+            <a href="index.html#aboutauthor" id="aboutme" title="my little resume">About</a>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="post">
+            <p>Which of our services you are interested? (cheked all that aplly)</p>
+            <label for="checke">websites design</label>
+            <input type="checkbox" name="services" id="websites">
+            <label for="checke">websites maintnance</label>
+            <input type="checkbox" name="services" id="websites">
+            <label for="checke">online promotion</label>
+            <input type="checkbox" name="services" id="websites">
+            <p> Why do you want a website?</p>
+            <textarea name="whywebsites" id="" cols="30" rows="10"></textarea>
+            <p>do you want to incorporate photo in your website?</p>
+            <label for="yes">YES</label>
+            <input type="radio" name="yes" id="yes">
+            <label for="no">NO</label>
+            <input type="radio" name="no" id="no">
+            <p>Are you a smaill business owner? or so you work for a largr corpotation?</p>
+            <label for="smallbusiness">Small Business</label>
+            <input type="radio" name="smallbusiness" id="smallbusiness">
+            <label for="country">your country</label>
+            <select name="country" id="countrylist">
+                <option value="1">USA</option>
+                <option value="2">Canada</option>
+                <option value="3">Mexico</option>
+                <option value="4">China</option>
+                <option value="5">French</option>
+                <option value="6">Domincan Republic</option>
+                <option value="7">Guyane</option>
+                <option value="8">Haiti</option>
+                <option value="9">Guadaloupe</option>
+            </select>
+            <p>tell us something we did not ask you , but you want</p>
+            <input type="text">
+            <button type="submit">submit</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

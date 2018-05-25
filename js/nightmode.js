@@ -1,5 +1,6 @@
 // check time to put on nightmode
 window.addEventListener("load", changeElse);
+
 function changeElse() {
     if (timeNow.getHours() >= 17) {
         changeBack();
@@ -10,18 +11,18 @@ const header = document.getElementById("header");
 const footer = document.getElementById("pages-footer");
 const btn = document.getElementById("buttonmode");
 const wrapper = document.getElementById("wrapper");
-const tt = document.getElementById("time")
+const tt = document.getElementById("time");
 
 // other html collection , header
-const subHeading = document.getElementsByClassName("subheadline");
+const subHeading = document.querySelectorAll(".subheadline") ||
+                   document.getElementsByClassName("subheadline");
 const slen = subHeading.length;
-const para = document.getElementsByTagName("p");
 
 // called the currnt time /sec
 const timeNow = new Date();
 setInterval(() => {
     tt.innerHTML = new Date();
-}, 1000)
+}, 1000);
 
 
 // event to element targeted
@@ -30,15 +31,15 @@ btn.addEventListener("click", changeBack)
 // lop through all the subheadthin
 // add en event to each
 for (let i = 0; i < slen; i++) {
-    subHeading[i].addEventListener("click", showOn)
+    subHeading[i].addEventListener("click", showOn);
 }
+
 function showOn() {
     // this refer to the subheading clicked
-    if (this.nextElementSibling.className == "hide") {
-
-        this.nextElementSibling.className = "";
-    } else {
+    if (this.nextElementSibling.className == "") {
         this.nextElementSibling.className = "hide";
+    } else {
+        this.nextElementSibling.className = "";
     }
 
 }
@@ -75,5 +76,3 @@ function changeBack() {
         btn.textContent = "nightmode";
     }
 }
-
-

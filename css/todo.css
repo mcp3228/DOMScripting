@@ -45,7 +45,7 @@ header {
 
 }
 #additems {
-    font-size: 1.2em;
+    max-width: 60px;
     color: #3a09c5;
     border: 1px groove gainsboro;
     border-radius: 15px;
