@@ -5,11 +5,12 @@ body {
     color: gray;
 }
 
-img , video{
+img , video {
     max-width: 100%;
     box-sizing: border-box;
     margin: auto;
 }
+
 #wrapper, footer {
     margin: 0 auto;
     width: 100%;
@@ -72,8 +73,8 @@ main {
     flex: 3;
 }
 
-.header-pages, .big-sectioon-container, .bio {
-    width: 650px;    
+.header-pages, .big-sectioon-container, .bio, {
+    width: 650px;   
 }
 
 .header-pages nav {
@@ -122,13 +123,15 @@ nav a:hover {
     color: white;  
     box-sizing: border-box;
     padding: 10px;
-    border-radius: 20px / 10px;    
+    border-radius: 20px / 10px;  
+    position: relative;  
 }
 .bio-header {
     display: flex;
     justify-content: space-around;
     background: #363636;
 }
+
 figure {
     flex: 1;
 }
@@ -184,23 +187,31 @@ section p {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 20px;
-    background: #f2ebf7;
+    background: #f2ebf7; 
 }
 .side-pub-ads-news div, .side-pub-ads-news nav {
-    margin: 10px auto;
+    margin: 15px auto;
     border: 3px solid transparent;
     background: #fff;
+    position: relative;
+    box-shadow: 0 13px 13px #363636;
+}
+.side-pub-ads-news ul > li {
+    border-bottom: 1px inset rebeccapurple;
+    padding: 7px;
 }
 .side-pub-ads-news textarea {
     width: 90%;
 }
-/*
-*
-***
-***END OF THE MAIN
-***
-*
-*/
+.ui-close {
+    background: #44394a;
+    color: #f2ebf7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1px 6px;
+    cursor: pointer;
+}
 
 /*
 *
@@ -248,113 +259,6 @@ footer a {
     font-weight: bold;
 }
 
-/************STYLES for mobile phone************/
-@media  (max-width: 360px)/* , (max-width: 478px */ {
-    #wrapper {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    /*
-    //these are #wrapper direct child
-    // taking their full width
-    */
-    main, aside {
-        flex-basis: 100%;
-    }
-    
-     .header-pages {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .header-pages nav  {
-        background: #f2ebf7;
-        
-    }
-    .side-menu {
-        display: none;
-        font-size: .7em;
-        width: 16%;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    aside ul li {
-        margin-bottom: 15px;
-    }
-    .box {
-        padding: 3px;
-        box-sizing: border-box;
-        width: 50%;
-        font-size: .8em;
-        
-    }
-    .bio {
-        margin-bottom: 20px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-}
-
-
-/*PHABLET= =NOTE 4, IPHONE 6 PLUS, NEXUS 6*/
-@media  (max-width: 480px) and (orientation: landscape) {
-    body {
-        /*so that .bio can have its space*/
-        position: relative;        
-    }
-    body, #wrapper, footer {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-    } 
-    
-    #menu-close {
-        padding: 2px;
-    }
-    #menu-close li {
-        padding: 2px;
-    }
-    main {
-        margin: 0;
-        width: 80%;
-    }
-
-    .header-pages {
-        margin-left: 0;
-    }
-    
-    .header-pages nav {
-        width: 100%;
-    }
-    nav > a {
-        color: rgb(176, 144, 212);
-        background: #44394a;
-        font-size: 1.1em;
-        display: block;
-        padding: 5px;
-        text-align: center;
-        border-top: 1px solid rgb(56, 39, 68);
-        border-bottom: 1px solid white;
-    }
-    nav a:nth-child(even) {
-         color: white;
-    }
-    
-    
-    .container, .second-container {
-        margin: 0;
-    }
-    .box {
-        padding: 5px;
-        box-sizing: border-box;
-        width: 100px;
-    }
-    .bio {
-        margin-bottom: 20px;
-    }
-    
-}
-/***********STYLES for TABLETS phone************/
 
 
 
