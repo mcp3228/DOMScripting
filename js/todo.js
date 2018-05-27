@@ -9,12 +9,12 @@
 
     for (let i = 0; i < ulitems.length; i++) {
         ulitems[2].addEventListener("click", function () {
-            if (ulitems[2].innerHTML == "delete") {
+            if (ulitems[4].children) {
                 checklist.innerHTML = localStorage.clear();
             }
         });
     }
-    
+
     // EVENT LISTENER TO ELEMENT SELECTED
     btnAdd.addEventListener("click", showOff);
     inputEntry.addEventListener("keypress", addTo);
@@ -53,6 +53,7 @@
     var showBottom = document.getElementById("show-bottom");
     var ulFooter = document.getElementById("ulfoot");
     showBottom.addEventListener("click", showBottomFooter);
+
     function showBottomFooter() {
         if (ulFooter.className == "hide") {
             ulFooter.className = "";
@@ -60,6 +61,8 @@
             ulFooter.className = "hide";
         }
     }
+
+    
     window.addEventListener("load", function () {
         // the value of chkecklist will be this value
         if (!localStorage.checklist)

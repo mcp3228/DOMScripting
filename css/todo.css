@@ -11,6 +11,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    font-size: 100%;
+}
+
 header {
     background: #eee;
     border-bottom: 1px groove silver;
@@ -19,12 +23,18 @@ header {
     box-sizing: border-box;
     padding: 15px;
 }
-body {
-    font-size: 100%;
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
 }
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(8, 8, 102, 0.73);
+}
+h1, ul, input {
+    margin: 15px;
+    width: 80%;
 }
 
 
@@ -38,23 +48,20 @@ header {
 }
 .heading {
     font-size: 2.5em;
-    color: cornflowerblue;
     color: navy;
     flex: 2;
     margin-top: 10px;
 
 }
 #additems {
-    max-width: 60px;
+    max-width: 48px;
+    max-height: 48px;
     color: #3a09c5;
     border: 1px groove gainsboro;
     border-radius: 15px;
     flex: 1;
     text-align: center;
     margin-top: 14px;
-    padding: 7px;
-    font-weight: bold;
-    text-transform: uppercase;
 }
  /*END OF THE HEADER SECTION*/
   /*MAIN SECTION*/
@@ -67,18 +74,17 @@ main, header, footer {
     display: inline;
 }
 
-h1, ul, input {
-    margin: 15px;
-    width: 80%;
-}
 
 input {
-    background: rebeccapurple;
     background: linear-gradient(darkblue, slateblue, navy);
     color: white;
     padding: 9px;
     font-weight: bold;
     border-radius: 10px;
+}
+input[type="image"] {
+    max-width: 48px;
+    max-height: 48px;
 }
 .hide{
     display: none;
@@ -87,15 +93,14 @@ input {
     display: block;
 }
 ul {
-    padding: 5px;
     list-style: disc;
-    margin: 15px auto;
+    margin: 5px auto;
 }
 li {
     color: navy;
     font-size: 18px;
     list-style: disc;
-    padding: 5px;
+    padding: 2px;
 }
 #ok {
     margin-left: 15px;
@@ -139,34 +144,6 @@ footer ul {
         max-width: 95%;
     }
     
-    header {
-        padding: 10px auto;
-        display: flex;
-        justify-content: space-around;
-        background: linear-gradient(gainsboro, seashell, #eef);
-        position: static;
-        top: 0;
-    }
-    .heading {
-        font-size: 2.5em;
-        color: cornflowerblue;
-        color: navy;
-        flex: 2;
-        margin-top: 10px;
-
-    }
-    #additems {
-        font-size: 1.2em;
-        color: #3a09c5;
-        border: 1px groove gainsboro;
-        border-radius: 5px;
-        flex: 1;
-        text-align: center;
-        margin-top: 14px;
-        padding: 10px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
      /*END OF THE HEADER SECTION*/
       /*MAIN SECTION*/
     main {
@@ -174,70 +151,9 @@ footer ul {
         max-width: 100%;
     }
 
-    #box-input, input, button {
-        display: inline;
-    }
-    
-    h1, ul, input {
-        margin: 15px;
-        width: 80%;
-    }
-
-    input {
-        background: rebeccapurple;
-        background: linear-gradient(darkblue, slateblue, navy);
-        color: white;
-        padding: 9px;
-        font-weight: bold;
-        border-radius: 10px;
-    }
-    .hide{
-        display: none;
-    }
-    .show {
-        display: block;
-    }
-    ul {
-        padding: 5px;
-        list-style: disc;
-        margin: 15px auto;
-    }
-    li {
-        color: navy;
-        font-size: 18px;
-        list-style: disc;
-        padding: 5px;
-    }
-    #ok {
-        margin-left: 15px;
-        color: white;
-        min-width: 55px;
-        background: linear-gradient(darkblue, slateblue, navy);
-        font-size: 19px;
-    }
-    #show-bottom {
-        margin-bottom: 0;
-        background: linear-gradient(darkblue, slateblue, navy);
-        color: gold;
-        padding: 5px;
-    }
    footer {
      width: 100%;
-     position: fixed;
-     color: #fff;
-     bottom: 0;
      left: 0;
+     padding: 0;
 }
-    footer ul {
-       width: 100%;
-       margin-top: 0;
-       text-align: center;
-       background: linear-gradient(darkblue, slateblue, navy);
-    }  
-    footer ul li {
-        list-style: none;
-        width: 100%;
-        border-bottom: 1px gainsboro groove;
-        color: white;
-    }
 }
